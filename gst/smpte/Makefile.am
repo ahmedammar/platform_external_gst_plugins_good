@@ -14,7 +14,7 @@ libgstsmpte_la_LIBTOOLFLAGS = --tag=disable-static
 Android.mk: Makefile.am $(BUILT_SOURCES)
 	androgenizer \
 	-:PROJECT libgstsmpte -:SHARED libgstsmpte \
-	 -:TAGS user eng debug \
+	 -:TAGS optional eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstsmpte_la_SOURCES) \
 	 -:CFLAGS $(DEFS) $(DEFAULT_INCLUDES) $(libgstsmpte_la_CFLAGS) \

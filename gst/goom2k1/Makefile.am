@@ -17,7 +17,7 @@ EXTRA_DIST = filters.c
 Android.mk: Makefile.am $(BUILT_SOURCES)
 	androgenizer \
 	-:PROJECT libgstgoom2k1 -:SHARED libgstgoom2k1 \
-	 -:TAGS user eng debug \
+	 -:TAGS optional eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstgoom2k1_la_SOURCES) \
 	 -:CFLAGS $(DEFS) $(DEFAULT_INCLUDES) $(libgstgoom2k1_la_CFLAGS) \

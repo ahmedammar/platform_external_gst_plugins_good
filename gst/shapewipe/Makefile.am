@@ -13,7 +13,7 @@ noinst_HEADERS = gstshapewipe.h
 Android.mk: Makefile.am $(BUILT_SOURCES)
 	androgenizer \
 	-:PROJECT libgstshapewhipe -:SHARED libgstshapewhipe \
-	 -:TAGS user eng debug \
+	 -:TAGS optional eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstshapewhipe_la_SOURCES) \
 	 -:CFLAGS $(DEFS) $(DEFAULT_INCLUDES) $(libgstshapewhipe_la_CFLAGS) \

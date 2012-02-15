@@ -51,7 +51,7 @@ EXTRA_DIST = gstrtpbin-marshal.list
 Android.mk: Makefile.am $(BUILT_SOURCES)
 	androgenizer \
 	-:PROJECT libgstrtpmanager -:SHARED libgstrtpmanager \
-	 -:TAGS user eng debug \
+	 -:TAGS optional eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstrtpmanager_la_SOURCES) \
 	 	   $(nodist_libgstrtpmanager_la_SOURCES) \

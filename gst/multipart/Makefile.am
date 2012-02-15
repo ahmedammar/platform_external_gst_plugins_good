@@ -12,7 +12,7 @@ noinst_HEADERS = multipartdemux.h multipartmux.h
 Android.mk: Makefile.am $(BUILT_SOURCES)
 	androgenizer \
 	-:PROJECT libgstmultipart -:SHARED libgstmultipart \
-	 -:TAGS user eng debug \
+	 -:TAGS optional eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstmultipart_la_SOURCES) \
 	 -:CFLAGS $(DEFS) $(DEFAULT_INCLUDES) $(libgstmultipart_la_CFLAGS) \

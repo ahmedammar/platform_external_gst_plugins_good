@@ -15,7 +15,7 @@ noinst_HEADERS = gstvideocrop.h gstaspectratiocrop.h
 Android.mk: Makefile.am $(BUILT_SOURCES)
 	androgenizer \
 	-:PROJECT libgstvideocrop -:SHARED libgstvideocrop \
-	 -:TAGS user eng debug \
+	 -:TAGS optional eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstvideocrop_la_SOURCES) \
 	 	   $(nodist_libgstvideocrop_la_SOURCES) \

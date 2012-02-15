@@ -12,7 +12,7 @@ noinst_HEADERS = gstsouphttpsrc.h gstsouphttpsink.h
 Android.mk: Makefile.am $(BUILT_SOURCES)
 	androgenizer \
 	-:PROJECT libgstsouphttpsrc -:SHARED libgstsouphttpsrc \
-	 -:TAGS user eng debug \
+	 -:TAGS optional eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstsouphttpsrc_la_SOURCES) \
 	 -:CFLAGS $(DEFS) $(DEFAULT_INCLUDES) $(CPPFLAGS) $(libgstsouphttpsrc_la_CFLAGS) \

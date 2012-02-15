@@ -14,7 +14,7 @@ noinst_HEADERS = gstspectrum.h
 Android.mk: Makefile.am $(BUILT_SOURCES)
 	androgenizer \
 	-:PROJECT libgstspectrum -:SHARED libgstspectrum \
-	 -:TAGS user eng debug \
+	 -:TAGS optional eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstspectrum_la_SOURCES) \
 	 	   $(nodist_libgstspectrum_la_SOURCES) \
