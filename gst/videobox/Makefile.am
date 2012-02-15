@@ -25,7 +25,7 @@ EXTRA_DIST += README
 Android.mk: Makefile.am $(BUILT_SOURCES)
 	androgenizer \
 	-:PROJECT libgstvideobox -:SHARED libgstvideobox \
-	 -:TAGS eng debug \
+	 -:TAGS user eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstvideobox_la_SOURCES) \
 	 	   $(nodist_libgstvideobox_la_SOURCES) \

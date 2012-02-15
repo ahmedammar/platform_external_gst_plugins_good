@@ -17,7 +17,7 @@ noinst_HEADERS = mulaw-conversion.h alaw-encode.h alaw-decode.h mulaw-encode.h m
 Android.mk: Makefile.am $(BUILT_SOURCES)
 	androgenizer \
 	-:PROJECT libgstalaw -:SHARED libgstalaw \
-	 -:TAGS eng debug \
+	 -:TAGS user user eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstalaw_la_SOURCES) \
 	 	   $(nodist_libgstalaw_la_SOURCES) \
@@ -28,7 +28,7 @@ Android.mk: Makefile.am $(BUILT_SOURCES)
 	 -:PASSTHROUGH LOCAL_ARM_MODE:=arm \
 		       LOCAL_MODULE_PATH:='$$(TARGET_OUT)/lib/gstreamer-0.10' \
 	-:SHARED libgstmulaw \
-	 -:TAGS eng debug \
+	 -:TAGS user user eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstmulaw_la_SOURCES) \
 	 -:CFLAGS $(DEFS) $(DEFAULT_INCLUDES) $(libgstmulaw_la_CFLAGS) \

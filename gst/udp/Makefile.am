@@ -35,7 +35,7 @@ CLEANFILES = $(BUILT_SOURCES)
 Android.mk: Makefile.am $(BUILT_SOURCES)
 	androgenizer \
 	-:PROJECT libgstudp -:SHARED libgstudp \
-	 -:TAGS eng debug \
+	 -:TAGS user eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstudp_la_SOURCES) \
 	 	   $(nodist_libgstudp_la_SOURCES) \

@@ -32,7 +32,7 @@ noinst_HEADERS = \
 Android.mk: Makefile.am $(BUILT_SOURCES)
 	androgenizer \
 	-:PROJECT libgstvideomixer -:SHARED libgstvideomixer \
-	 -:TAGS eng debug \
+	 -:TAGS user eng debug \
          -:REL_TOP $(top_srcdir) -:ABS_TOP $(abs_top_srcdir) \
 	 -:SOURCES $(libgstvideomixer_la_SOURCES) \
 	 	   $(nodist_libgstvideomixer_la_SOURCES) \
